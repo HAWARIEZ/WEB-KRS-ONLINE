@@ -1,0 +1,50 @@
+{%extends 'mahasiswa/dash_mhs.html'%}
+
+{%block content%}
+
+
+<div class="m-t-150">
+    <div class="section__content section__content--p90">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-sm-offset-2">
+                        <!-- USER DATA-->
+                        <div class="user-data m-b-40">
+                            <h3 class="title-3 m-b-30">
+                                <i class="zmdi zmdi-account-calendar"></i>BIODATA </h3>
+                            <div class="table-responsive table-data">
+                                    <div class="image" align="center" >
+                                            <img src="static/bootstrap/images/icon/avatar-06.jpg" width="300px" height="300px">
+                                <table class="table">
+                                    <tbody >
+                                        <tr><td>NIM</td>
+                                            <td>: {{current_user.nim}}</td>
+                                        </tr>
+                                        <tr><td>NAMA</td>
+                                            <td>: {{current_user.nama}}</td>
+                                        </tr>
+                                        <tr><td>JENIS KELAMIN </td>
+                                            <td>: {{current_user.jenis_kelamin}}</td>
+                                        </tr>
+                                        <tr><td>TEMPAT LAHIR </td>
+                                            <td>: {{current_user.tmpt_lahir}}</td>
+                                        </tr>
+                                        <tr><td>TANGGAL LAHIR </td>
+                                            <td>: {{current_user.tgl_lahir}}</td>
+                                        </tr>
+                                        <tr><td>ALAMAT</td>
+                                            <td>: {{current_user.alamat}}</td>
+                                        </tr>
+                                        <tr><td>PRODI </td>
+                                            <td>: {{current_user.prodi}}</td>
+                                        </tr>
+
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                        
+                        </div>
+                <!-- END USER DATA-->
+
+{%endblock%}
